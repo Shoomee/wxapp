@@ -14,7 +14,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#11c8fa",
-    "navigationBarTitleText": "企人宝",
+    "navigationBarTitleText": "企人宝！",
     "navigationBarTextStyle":"white",
     "enablePullDownRefresh":"true"
   },
