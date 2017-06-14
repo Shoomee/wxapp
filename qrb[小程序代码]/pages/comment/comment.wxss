@@ -1,0 +1,71 @@
+.box {
+  margin: 25rpx;
+  width: 700rpx;
+  background-color: #fff;
+  box-shadow: 0 0 5rpx gainsboro;
+}
+
+.footer-display {
+  height: 120rpx;
+  width: 750rpx;
+  background-color: #fff;
+}
+
+.boxTtitle {
+  margin: 25rpx;
+  width: 650rpx;
+}
+
+.commentSubmit {
+  position: fixed;
+  bottom: -1rpx;
+  left: -1rpx;
+  width: 753rpx;
+  height: 100rpx;
+  font-size: 38rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: sandybrown;
+}
+
+.checkbox {
+  margin: 25rpx;
+  width: 600rpx;
+  float: left;
+  color: #bcbcbc;
+}
+
+.choose-tag {
+  width: 650rpx;
+}
+
+.good {
+  margin: 25rpx;
+  background-color: lightgreen;
+  text-align: center;
+  width: 225rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #fff;
+  float: left;
+}
+
+.bad {
+  margin: 25rpx;
+  background-color: orangered;
+  text-align: center;
+  width: 225rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #fff;
+  float: left;
+}
+
+.choose-tag-border {
+  border: 1rpx solid #bcbcbc;
+}

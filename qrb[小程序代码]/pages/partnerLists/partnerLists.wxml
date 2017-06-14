@@ -1,0 +1,26 @@
+<view class="container">
+  <view wx:for="{{partnerLists}}" wx:key="index" wx:for-item="item" class="partnerList" data-pid="{{item.user_id}}" bindtap="bindViewTap">
+    <view class="avatarImageBox">
+      <image src="https://qrb.shoomee.cn/upload/{{item.user.user_info.avatar}}" class="avatarImage"></image>
+    </view>
+    <view class="partnerInfo">
+      <view class="partnerInfoContent">{{item.user.name}} {{item.user.user_info.work_title}}</view>
+      <view class="partnerInfoContent">成长值:{{item.user.user_info.growth_value}}</view>
+      <view class="partnerInfoContent">从业年龄:{{item.user.user_info.work_years}}年</view>
+      <view class="partnerInfoContent">职务:{{item.user.user_info.work_duty}}</view>
+      <view class="partnerInfoContent">单位:{{item.user.user_info.company}}</view>
+    </view>
+    <view class="partnerService">
+      <view class="partnerServiceTitle">
+        TA的团队提供的服务</view>
+      <view class="partnerServiceLab">
+        <view class="partnerServiceLabX" wx:for="{{item.vr_words}}" wx:key="index" wx:for-item="itemVr">
+          {{itemVr}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{isShow}}" style="margin-top:50rpx;">
+    未查询到相关结果~
+  </view>
+</view>

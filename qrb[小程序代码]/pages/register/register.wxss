@@ -1,0 +1,17 @@
+.container-hang {  
+    display: flex;  
+    flex-direction: row;  
+    background-color: #fff;   
+} 
+.bottomBox {
+  position: fixed;
+  bottom: -1rpx;
+  left: -1rpx;
+  width: 753rpx;
+  height: 100rpx;
+  font-size: 38rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #1AAD16;
+}

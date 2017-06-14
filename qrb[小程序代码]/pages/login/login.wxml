@@ -1,0 +1,13 @@
+<view class="container" style="height: {{windowHeight}}px">
+  <view id="firstStep_Pad" class="container" style="height:auto;">
+    <text class="grayLineHeng" style="margin-top:55rpx" />
+    <text class="grayLineHeng" />
+    <view class="container-hang" style="width:{{windowWidth}}px;">
+      <image src="{{icon_password}}" style="width:49rpx; height: 49rpx; margin:28rpx" />
+      <input bindchange="input_password" style="margin:24rpx 32rpx 0 0;height:49rpx;width:500rpx" placeholder="密码" placeholder-style="width:500rpx" password/>
+    </view>
+    <text class="grayLineHeng" />
+  </view>
+  <view class="bottomBox" bindtap="login">登录</view>
+  <view class="bottomBox1" bindtap="toindex">返回</view>
+</view>

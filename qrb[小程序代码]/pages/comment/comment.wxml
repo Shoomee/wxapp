@@ -1,0 +1,61 @@
+<view class="container">
+
+  <!-- 选择1 -->
+  <view class="box" wx:if="{{commentOrder.order_comment.c2p_labels == undefined}}">
+    <view class="boxTtitle">
+      评论达人/合伙人
+    </view>
+    <view class="boxBody">
+      <view class="choose-tag">
+        <view class="good  {{isChoose==1?'choose-tag-border':''}}" bindtap="good">好评</view>
+        <view class="bad  {{isChoose==0?'choose-tag-border':''}}" bindtap="bad">差评</view>
+      </view>
+      <checkbox-group bindchange="checkboxChange" style="display:{{isChoose==1?'block':'none'}}">
+        <label class="checkbox" wx:for="{{commentTag}}" wx:if="{{item.type==2 && item.is_good == isChoose}}">
+          <checkbox value="{{item.id}}" checked="{{item.checked}}" />{{item.content}}
+        </label>
+      </checkbox-group>
+      <checkbox-group bindchange="checkboxChange" style="display:{{isChoose==0?'block':'none'}}">
+        <label class="checkbox" wx:for="{{commentTag}}" wx:if="{{item.type==2 && item.is_good == isChoose}}">
+          <checkbox value="{{item.id}}" checked="{{item.checked}}" />{{item.content}}
+        </label>
+      </checkbox-group>
+      <view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 选择2 -->
+  <view class="box" wx:if="{{commentOrder.tel_service_id != undefined}}">
+    <view wx:if="{{commentOrder.order_comment.c2t_labels == undefined}}">
+      <view class="boxTtitle">
+        评论客服
+      </view>
+      <view class="boxBody">
+        <view class="choose-tag">
+          <view class="good  {{isChoose2==1?'choose-tag-border':''}}" bindtap="good2">好评</view>
+          <view class="bad  {{isChoose2==0?'choose-tag-border':''}}" bindtap="bad2">差评</view>
+        </view>
+        <checkbox-group bindchange="checkboxChange2" style="display:{{isChoose2==1?'block':'none'}}">
+          <label class="checkbox" wx:for="{{commentTag}}" wx:if="{{item.type==3 && item.is_good == isChoose2}}">
+            <checkbox value="{{item.id}}" checked="{{item.checked}}" />{{item.content}}
+          </label>
+        </checkbox-group>
+        <checkbox-group bindchange="checkboxChange2" style="display:{{isChoose2==0?'block':'none'}}">
+          <label class="checkbox" wx:for="{{commentTag}}" wx:if="{{item.type==3 && item.is_good == isChoose2}}">
+            <checkbox value="{{item.id}}" checked="{{item.checked}}" />{{item.content}}
+          </label>
+        </checkbox-group>
+        <view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer-display">
+  </view>
+
+  <!-- 提交 -->
+  <view class="commentSubmit" bindtap="createOrder">
+    提交评论
+  </view>
+</view>

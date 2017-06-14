@@ -1,0 +1,56 @@
+.partnerList {
+  background-color: #fff;
+  box-shadow: 0 0 5rpx gainsboro;
+  margin: 25rpx;
+  width: 700rpx;
+}
+.avatarImage {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.avatarImageBox {
+  border-radius: 75rpx;
+  overflow: hidden;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 25rpx;
+  float: left;
+}
+.partnerInfo {
+  width: 450rpx;
+  height: 375rpx;
+  margin: 25rpx;
+  float: left;
+}
+
+.partnerInfoContent {
+  height: 75rpx;
+  width: 450rpx;
+  float: left;
+  /*line-height: 75rpx;*/
+  font-size: 32rpx;
+}
+
+.partnerService {
+  margin: 25rpx;
+  width: 650rpx;
+  float: left;
+}
+
+.partnerServiceLabX {
+  margin: 10rpx;
+  padding: 10rpx;
+  border: 1rpx solid #bcbcbc;
+  float: left;
+  font-size: 32rpx;
+  color: #acacac;
+}
+.partnerServiceTitle{
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.partnerServiceLab{
+  margin-top: 25rpx;
+  width: 650rpx;
+}

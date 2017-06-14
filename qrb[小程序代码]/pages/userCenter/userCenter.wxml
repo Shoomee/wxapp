@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="avatarLogin">
+    <view class="avatarBox">
+      <image class="avatarImage" src="{{userInfo.avatarUrl ? userInfo.avatarUrl:'/images/not_login.png'}}"></image>
+    </view>
+    <view class="nickName">
+    {{userInfo.nickName ? userInfo.nickName:'未登录'}}
+    </view>
+  </view>
+  <view class="outBox">
+    <view class="setBox" bindtap="toRegister">
+      <view class="setBoxLeft">
+        <image class="setBoxLeftIcon" src="/images/set.png"></image>
+      </view>
+      <view class="setBoxRight">
+        手机认证
+      </view>
+      <view class="setBoxRightArr">
+        <image class="setBoxRightArrIcon" src="/images/arrowright.png"></image>
+      </view>
+    </view>
+    <view class="setBox" style="display:none" >
+      <view class="setBoxLeft">
+        <image class="setBoxLeftIcon" src="/images/set.png"></image>
+      </view>
+      <view class="setBoxRight">
+        关于我们
+      </view>
+      <view class="setBoxRightArr">
+        <image class="setBoxRightArrIcon" src="/images/arrowright.png"></image>
+      </view>
+    </view>
+
+    <view class="setBox" bindtap="signOut">
+      <view class="setBoxLeft">
+        <image class="setBoxLeftIcon" src="/images/set.png"></image>
+      </view>
+      <view class="setBoxRight">
+        注销认证
+      </view>
+      <view class="setBoxRightArr">
+        <image class="setBoxRightArrIcon" src="/images/arrowright.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

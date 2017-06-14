@@ -1,0 +1,8 @@
+@import "/wxSearch/wxSearch.wxss";
+.wxSearch-input{
+    font-size: 26rpx;
+}
+.wxSearch-button{
+    font-size: 26rpx;
+    margin-top: 8rpx;
+}

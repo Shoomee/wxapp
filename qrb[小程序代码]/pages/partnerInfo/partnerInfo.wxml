@@ -1,0 +1,79 @@
+<view class="container">
+  <view class="box">
+    <view class="avatarImageBox">
+      <image class="avatarImage" src="https://qrb.shoomee.cn/upload/{{partnerInfo.user_info.avatar}}"></image>
+    </view>
+    <view class="partnerInfo">
+      <view class="partnerInfoContent">{{partnerInfo.name}} {{partnerInfo.user_info.work_title}}</view>
+      <view class="partnerInfoContent">成长值: {{partnerInfo.user_info.growth_value}}</view>
+    </view>
+    <view class="partnerService">
+      <view class="partnerServiceLabX" wx:for="{{partnerInfo.team.vr_words}}"  wx:for-item="item">
+        {{item}}
+      </view>
+    </view>
+    <view class="partnerInfoMore">
+      <view class="partnerInfoMoreList">
+        <view class="partnerInfoMoreListLeft">
+          从业年限
+        </view>
+        <view class="partnerInfoMoreListRight">
+          {{partnerInfo.user_info.work_years}}年
+        </view>
+      </view>
+      <view class="partnerInfoMoreList">
+        <view class="partnerInfoMoreListLeft">
+          职务
+        </view>
+        <view class="partnerInfoMoreListRight">
+          {{partnerInfo.user_info.work_duty}}
+        </view>
+      </view>
+      <view class="partnerInfoMoreList">
+        <view class="partnerInfoMoreListLeft">
+          单位
+        </view>
+        <view class="partnerInfoMoreListRight">
+          {{partnerInfo.user_info.company}}
+        </view>
+      </view>
+      <view class="partnerInfoMoreList">
+        <view class="partnerInfoMoreListLeft">
+          简介
+        </view>
+        <view class="partnerInfoMoreListRightMore">
+          {{partnerInfo.user_info.description}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="commentTitle">
+  评价
+  </view>
+  <view class="box box-bottom">
+    <view class="commentContentList">
+      <view class="commentContent" wx:for="{{partnerInfo.recommend}}" wx:for-item="itemRec" wx:if="{{itemRec.name!=undefined}}">
+        <view class="avatarImageBoxSmall">
+          <image class="avatarImageSmall" src="https://qrb.shoomee.cn/upload/{{itemRec.avatar}}"></image>
+        </view>
+        <view class="commentContentTopInfo">
+          <view class="commentContentTopInfoList">
+            {{itemRec.name}}
+          </view>
+          <view class="commentContentTopInfoList">
+            {{itemRec.time}}
+          </view>
+        </view>
+        <view class="commentContentBottom">
+          {{itemRec.content}}
+        </view>
+      </view>
+      <view class="noComment" style="display:{{isShow ? 'block':'none'}};">
+        暂无评价~
+      </view>
+    </view>
+  </view>
+  <view class="orderCreate" bindtap="createOrder" data-tid="{{partnerInfo.team.id}}" data-ptid="{{partnerInfo.team.user_id}}">
+    创建订单
+  </view>
+</view>

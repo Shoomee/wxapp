@@ -1,0 +1,82 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="indexTop">
+    <view class="indexTopLeft">
+      <view class="indexTopLeftImage">
+        <image src="/images/position.png" class="positionImage"></image>
+      </view>
+      <view class="indexTopLeftCity">
+        扬州
+      </view>
+    </view>
+    <view class="indexTopRight">
+      <view class="indexTopRight">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl:'/images/not_login.png'}}" background-size="cover"></image>
+      </view>
+      <view class="indexTopRightName">{{userInfo.nickName ? userInfo.nickName:'未登录'}}</view>
+    </view>
+  </view>
+  <view class="indexSearch" bindtap="bindViewTap">
+    <view class="indexSearchTop">
+      <image src="/images/A1-logo.png" class="indexSearchTopImage"></image>
+    </view>
+    <view class="indexSearchDown">
+      <view class="indexSearchDownLeft">
+        <image src="/images/搜索.png" class="indexSearchDownLeftImage"></image>
+      </view>
+      <view class="indexSearchRight">
+        <view class="indexSearchRightInput">
+          <text>搜索服务</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="indexClassList">
+    <view class="eClass" wx:for="{{serviceClass}}" wx:key="index" wx:for-item="item" bindtap="toSearch" data-name="{{item.name}}">
+      <image class="eClassImage" src="https://qrb.shoomee.cn/upload/{{item.icon}}" background-size="cover"></image>
+      <view class="eClassTitle">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="indexPartner">
+    <view class="partnerBox">
+      <view class="partnerBoxHead">
+        <view class="partnerBoxHeadTitle">
+          推荐合伙人
+        </view>
+      </view>
+      <view class="partnerBoxBody">
+        <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+          <block wx:for="{{recPartners}}" wx:key="index">
+            <swiper-item>
+              <image bindtap="bindViewTapInfo" src="https://qrb.shoomee.cn/upload/{{item.recommend_pic}}" class="slide-image" mode="aspectFill" data-pid="{{item.user_id}}" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+  <view class="indexRecommend">
+    <view class="partnerBox">
+      <view class="partnerBoxHead">
+        <view class="partnerBoxHeadTitle">
+          推荐服务
+        </view>
+      </view>
+      <view class="partnerBoxBody">
+        <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+          <block wx:for="{{movies}}" wx:key="index">
+            <swiper-item>
+              <image  bindtap="callPartner" data-phone="{{item.mobile}}" src="{{item.url}}" class="slide-image" mode="aspectFill" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+  <view class="question">
+    <image src="/images/提问.png" class="questionImage" bindtap="toQuestion"></image>
+  </view>
+</view>

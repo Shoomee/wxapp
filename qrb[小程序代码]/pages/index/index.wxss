@@ -1,0 +1,174 @@
+/**index.wxss**/
+
+.indexTop {
+  height: 104rpx;
+  background-color: #f0f0f2;
+  width: 100%;
+}
+
+.indexTopLeft {
+  float: left;
+}
+
+.indexTopLeftImage {
+  float: left;
+}
+
+.positionImage {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 27rpx;
+}
+
+.indexTopLeftCity {
+  float: left;
+  font-size: 32rpx;
+  line-height: 104rpx;
+}
+
+.indexTopRight {
+  float: right;
+}
+
+.userinfo-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.indexTopRightName {
+  font-size: 32rpx;
+  line-height: 104rpx;
+  float: right;
+}
+
+.indexSearch {
+  height: 300rpx;
+  width: 750rpx;
+  background-color: #f0f0f2;
+}
+
+.indexSearchTop {
+  height: 100rpx;
+  width: 750rpx;
+}
+
+.indexSearchTopImage {
+  text-align: center;
+  height: 70rpx;
+  width: 200rpx;
+  margin: 15rpx 275rpx;
+}
+
+.indexSearchDown {
+  height: 80rpx;
+  width: 450rpx;
+  margin: 60rpx 150rpx;
+  border: 1rpx #dcdcdc solid;
+}
+
+.indexSearchDownLeft {
+  height: 80rpx;
+  width: 80rpx;
+  background-color: #fff;
+  float: left;
+}
+.indexSearchDownLeftImage{
+  width: 64rpx;
+  height: 64rpx;
+  margin: 8rpx;
+}
+
+.indexSearchRight {
+  height: 80rpx;
+  width: 370rpx;
+  background-color: #fff;
+  float: left;
+}
+.indexSearchRightInput{
+  height: 60rpx;
+  width: 100%;
+  margin: 10rpx 0;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  color: #dcdcdc;
+}
+
+.indexClassList {
+  height: 330rpx;
+  width: 100%;
+  background-color: #f0f0f2;
+}
+
+.indexBuild {
+  height: 400rpx;
+  width: 100%;
+}
+
+.indexPartner {
+  height: 400rpx;
+  width: 100%;
+}
+
+.partnerBox {
+  height: 400rpx;
+  width: 710rpx;
+  margin: 0 20rpx;
+}
+
+.partnerBoxHead {
+  height: 100rpx;
+  width: 100%;
+}
+
+.partnerBoxHeadTitle {
+  font-size: 36rpx;
+  line-height: 100rpx;
+}
+
+.partnerBoxBody {
+  height: 300rpx;
+  width: 100%;
+}
+
+.indexRecommend {
+  height: 300rpx;
+  width: 100%;
+}
+
+.eClass {
+  width: 25%;
+  height: 150rpx;
+  float: left;
+  text-align: center;
+}
+
+.eClassImage {
+  height: 80rpx;
+  width: 80rpx;
+  margin-top: 20rpx;
+}
+
+.eClassTitle{
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+
+.swiper {
+  height: 300rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.questionImage{
+  width: 150rpx;
+  height: 150rpx;
+  position: fixed;
+  bottom: 10rpx;
+  right: 10rpx;
+}

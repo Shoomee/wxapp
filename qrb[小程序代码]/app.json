@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/partnerLists/partnerLists",
+    "pages/partnerInfo/partnerInfo",
+    "pages/orders/orders",
+    "pages/userCenter/userCenter",
+    "pages/login/login",
+    "pages/comment/comment",
+    "pages/register/register",
+    "pages/question/question"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#11c8fa",
+    "navigationBarTitleText": "企人宝",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {  
+    "color": "#a9b7b7",  
+    "selectedColor": "#56abe4",  
+    "borderStyle":"white",  
+    "list": [{  
+      "selectedIconPath": "images/indexSelect.png",  
+      "iconPath": "images/index.png",  
+      "pagePath": "pages/index/index",  
+      "text": "首页"  
+    }, {  
+      "selectedIconPath": "images/orderSelect.png",  
+      "iconPath": "images/order.png",  
+      "pagePath": "pages/orders/orders",  
+      "text": "订单"  
+    }, {  
+      "selectedIconPath": "images/userSelect.png",  
+      "iconPath": "images/user.png",  
+      "pagePath": "pages/userCenter/userCenter",  
+      "text": "我的"  
+    }]  
+  }
+}

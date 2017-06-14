@@ -1,0 +1,79 @@
+.setBox {
+  height: 100rpx;
+  width: 700rpx;
+  box-shadow:0 0 10rpx gainsboro; 
+  background-color: #fff;
+  margin: 25rpx 25rpx;
+}
+
+.setBoxLeft {
+  height: 100rpx;
+  width: 100rpx;
+  float:left;
+}
+
+.setBoxLeftIcon {
+  height: 80rpx;
+  width: 80rpx;
+  margin: 10rpx;
+}
+
+.setBoxRight {
+  height: 100rpx;
+  width: 450rpx;
+  padding-left: 50rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  float:left;
+  line-height: 100rpx;
+}
+
+.setBoxRightArr{
+height: 100rpx;
+  width: 100rpx;
+  float:left;
+}
+
+.setBoxRightArrIcon{
+height: 60rpx;
+  width: 60rpx;
+  margin: 20rpx;
+}
+
+.outBox{
+  width: 100%;
+}
+
+/***/
+.avatarLogin{
+width: 750rpx;
+height: 300rpx;
+background-color: #11c8fa;
+}
+
+.avatarBox{
+  height: 150rpx;
+  width: 150rpx;
+  margin: 75rpx 300rpx 0 300rpx;
+  text-align: center;
+  border-radius: 75rpx;
+  overflow: hidden;
+  float: left;
+  
+}
+
+.avatarImage{
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.nickName{
+  text-align: center;
+  height: 75rpx;
+  width: 750rpx;
+  line-height: 75rpx;
+  font-size: 28rpx;
+  float: left;
+  font-weight: 600;
+  color:white;
+}

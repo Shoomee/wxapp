@@ -1,0 +1,103 @@
+.orderList {
+  height: 500rpx;
+  width: 750rpx;
+  /*background: gainsboro;*/
+  z-index: 100;
+}
+
+.orderBox {
+  height: 400rpx;
+  width: 650rpx;
+  margin: 50rpx;
+  background-color: #fff;
+  box-shadow: 0 0 5rpx gainsboro;
+}
+
+.orderBoxHead {
+  height: 100rpx;
+  width: 650rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+
+.orderBoxHeadTitle {
+  font-size: 30rpx;
+  line-height: 100rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+
+.orderBoxHeadTime {
+  font-size: 30rpx;
+  line-height: 100rpx;
+  float: right;
+  margin-right: 20rpx;
+}
+
+.orderBoxBody {
+  height: 200rpx;
+  width: 650rpx;
+}
+
+.orderBoxBodyContent {
+  font-size: 33rpx;
+  line-height: 66rpx;
+  margin-left: 20rpx;
+  color: #A2A2A2
+}
+
+.orderBoxFoot {
+  height: 100rpx;
+  width: 650rpx;
+  border-top: 1rpx solid gainsboro;
+}
+
+
+
+.orderCall {
+  color: #fff;
+  font-size: 34rpx;
+  text-align: center;
+  line-height: 99rpx;
+  background-color: #11c8fa;
+  width: 325rpx;
+  height: 99rpx;
+  float: right;
+}
+.orderCall-left {
+  color: #fff;
+  font-size: 34rpx;
+  text-align: center;
+  line-height: 99rpx;
+  background-color: #F9D25D;
+  width: 324rpx;
+  height: 99rpx;
+  float: left;
+}
+.border-left{
+  margin-left: 1rpx solid #fff;
+}
+
+.orderComment {
+  color: #fff;
+  font-size: 34rpx;
+  text-align: center;
+  line-height: 99rpx;
+  background-color: #F9D25D;
+  width: 650rpx;
+  height: 99rpx;
+}
+/**index.wxss**/
+.item-style{
+  padding: 30rpx;
+  font-size: 40rpx;
+  text-align: center;
+  border-top: 2rpx solid #eee;
+}
+.refresh-block {
+  padding: 15px;
+  text-align: center
+}
+.refresh-block image {
+  width: 30px;
+  height: 30px;
+}

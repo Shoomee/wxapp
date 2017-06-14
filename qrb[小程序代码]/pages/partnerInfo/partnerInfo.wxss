@@ -1,0 +1,153 @@
+.box {
+  background-color: #fff;
+  box-shadow: 0 0 5rpx gainsboro;
+  margin: 25rpx;
+  width: 700rpx;
+}
+
+.avatarImage {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.avatarImageBox {
+  border-radius: 75rpx;
+  overflow: hidden;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 25rpx;
+  float: left;
+}
+
+.avatarImageSmall {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.avatarImageBoxSmall {
+  border-radius: 50rpx;
+  overflow: hidden;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 25rpx;
+  float: left;
+}
+
+.partnerInfo {
+  width: 450rpx;
+  height: 150rpx;
+  margin: 25rpx;
+  float: left;
+}
+
+.partnerInfoContent {
+  height: 75rpx;
+  width: 300rpx;
+  float: left;
+  line-height: 75rpx;
+  font-size: 32rpx;
+}
+
+.partnerService {
+  margin: 25rpx;
+  width: 650rpx;
+  float: left;
+}
+
+.partnerServiceLabX {
+  margin: 10rpx;
+  padding: 10rpx;
+  border: 1rpx solid #bcbcbc;
+  float: left;
+  font-size: 32rpx;
+  color: #acacac;
+}
+
+.partnerInfoMore {
+  margin: 25rpx;
+  width: 650rpx;
+  float: left;
+}
+
+.partnerInfoMoreList {
+  margin: 20rpx 0rpx;
+  width: 650rpx;
+  float: left;
+}
+
+.commentTitle {
+  font-size: 34rpx;
+  color: #000;
+  font-weight: 600;
+  text-align: left;
+  width: 100rpx;
+  margin: 25rpx 550rpx 25rpx 25rpx;
+}
+
+.partnerInfoMoreListLeft {
+  width: 200rpx;
+  margin-right: 20rpx;
+  float: left;
+  font-size: 34rpx;
+}
+
+.partnerInfoMoreListRight {
+  width: 430rpx;
+  float: left;
+  font-size: 34rpx;
+}
+
+.partnerInfoMoreListRightMore {
+  width: 430rpx;
+  float: left;
+  font-size: 34rpx;
+}
+
+.commentContentTopInfo {
+  margin: 25rpx;
+  width: 450rpx;
+  float: left;
+}
+
+.commentContentTopInfoList {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  width: 450rpx;
+}
+
+.commentContent {
+  float: left;
+  margin: 25rpx;
+  box-shadow: 0 0 5rpx gainsboro;
+}
+
+.commentContentBottom {
+  float: left;
+  margin: 25rpx;
+  font-size: 32rpx;
+}
+
+.noComment {
+  margin: 25rpx;
+  font-size: 32rpx;
+  color: #bcbcbc;
+  text-align: center;
+}
+
+.orderCreate {
+  position: fixed;
+  bottom: -1rpx;
+  left: -1rpx;
+  width: 753rpx;
+  height: 100rpx;
+  font-size: 38rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: deepskyblue;
+}
+
+.box-bottom {
+  margin-bottom: 125rpx;
+}

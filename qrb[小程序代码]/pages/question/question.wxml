@@ -1,0 +1,21 @@
+<view style="background-color:#f0f0f2;height:{{windowHeight}}px">
+  <view class="box">
+    <view class="boxName">您的称谓:</view>
+    <view class="boxInput">
+     <input type="text" bindchange="input_name" />
+     </view>
+  </view>
+  <view class="box">
+    <view class="boxName">您的电话:</view>
+    <view class="boxInput">
+     <input type="text" bindchange="input_mobile" />
+     </view>
+  </view>
+  <view class="box">
+    <view class="boxName">您的问题:</view>
+    <view class="boxInput2">
+      <textarea auto-height placeholder="" bindinput="input_question" />
+     </view>
+  </view>
+  <view class="bottomBox" bindtap="subQuestion">提交</view>
+</view>
